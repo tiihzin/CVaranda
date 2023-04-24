@@ -88,6 +88,7 @@ nav{
 /*HOME*/
 .home{
     background-image: url(src/Background1.png);
+    background-repeat: no-repeat;
     height: 100vh;
     padding: 0px;
     display: flex;
