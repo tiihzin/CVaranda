@@ -71,7 +71,7 @@ header{
 }
 
 
-nav{
+header a{
     margin-right: 10px;
     color: #353333;
     font-family: 'Montserrat', sans-serif;
@@ -88,7 +88,6 @@ nav{
 /*HOME*/
 .home{
     background-image: url(src/Background1.png);
-    background-repeat: no-repeat;
     height: 100vh;
     padding: 0px;
     display: flex;
@@ -164,4 +163,72 @@ a{
 a:hover{
     background: #fff;
     color: #353333;
+}
+
+
+/*atendimento*/
+#atendimento {
+    background-color: #ebebee;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.atd_esquerda{
+    width: 400px;
+}
+.atd_direita{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+#atendimento h2{
+    margin-top: 15px;
+}
+.celular{
+    margin-top: 60px;
+    display: flex;
+    flex-direction: row;
+    align-items: start
+}
+.celular img{
+    padding-right: 10px;
+}
+input[type="tel"],input[type="text"]{
+    background: transparent;
+    border: #353333 solid 2px;
+    padding: 15px 20px 15px 40px;
+    font-weight: 600;
+    color: #353333;
+}
+
+input[type="button"]{
+    background: #353333;
+    color: #ebebee;
+    margin-top: 20px;
+    padding: 15px 20px;
+    font-weight: 600;
+}
+
+
+label img{
+    position: relative;
+    left: -225px;
+    top:5px;
+
+}
+
+/*Footer*/
+footer {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #353333;
+}
+
+footer h2{
+    font-size: 0.8rem;
 }

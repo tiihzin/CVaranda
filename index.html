@@ -11,17 +11,19 @@
     <header>
         <img src="src/LogoHeader.svg" alt="">
         <div class="menu">
-            <nav>home</nav>
-            <nav>sobre mim</nav>
-            <nav>especialização</nav>
-            <nav>atendimento online</nav>
+            <a href="#home">Home</a>
+            <a href="#sobremim">Sobre Mim</a>
+            <a href="#Especialização">Especialização</a>
+            <a href="#depoimentos">Depoimentos</a>
+
+            <a href="#atendimento">Atendimento online</a>
         </div>
     </header>
-    <section class="home">
+    <section class="home" id="home">
         <img src="src/LogoGrande.svg" alt="">
     </section>
 
-    <section class="sobremim">
+    <section class="sobremim" id="sobremim">
         <div class="esquerda">
             <h1>Sobre Mim</h1>
             <p>Me chamo <b>Carla Varanda</b>, sou psicóloga clínica e meu trabalho é pautado através da Abordagem Centrada na Pessoa, uma abordagem da 3ª força da Psicologia que coloca o ser humano como ponto central da sua história e não o adoecimento psíquico em si. <br>
@@ -35,7 +37,7 @@
         </div>
     </section>
 
-    <section class="especializacao">
+    <section class="especializacao" id="Especialização">
         <h1>Especialização</h1>
         <h2>Sempre uma nova Especialização em andamento</h2>
         <div class="container">
@@ -57,17 +59,60 @@
         </div>
     </section>
     
-    <section class="depoimentos">
-        <h1>depoimentos</h1>
+    <section class="depoimentos" id="depoimentos">
+        <h1>Depoimentos</h1>
         <p> “Antes de conhecer a Carla eu havia passado por dois psicólogos, mas eu não me senti a vontade com nenhum dos dois, pensei até em desistir de fazer terapia pois achava que não iria resolver, porém eu tentei mais uma vez e encontrei a Carla. Estamos trabalhando juntas fazem dois meses e já vejo resultados, sem contar que ela é super gentil e dedicada, de fato uma excelente profissional que ama o que faz.”</p>
         <h2>Stefany, Carapicuíba/SP</h2>
     </section>
 
-    <section class="conversar">
+    <section class="conversar" id="conversar">
         <h5>ULTRAPASSE SUAS PRÓPRIAS BARREIRAS E ENCORAJA-SE A VIVER UM PROCESSO DE AUTOCONHECIMENTO E TRANSFORMAÇÃO. A VIDA É UM PROCESSO, NÃO UM ESTADO DE SER. É UMA DIREÇÃO, NÃO UM DESTINO.</h5>
 
         <a href="">fale conosco</a>
     </section>
+
+    <section class="atendimento" id="atendimento">
+        <div class="atd_esquerda">
+            <h1>
+                Atendimento Online
+            </h1>
+            <p>
+               Os atendimentos acontecem de forma on-line pelo menos uma vez por semana com dias e horários fixos.
+            </p>
+            <h2>
+                Adolecentes, adultos e idosos
+            </h2>
+            <div class="celular">
+                <img src="src/FoneGrande.svg" alt="">
+                <h1>(91) 4002-8922</h1>
+            </div>
+        </div>
+
+        <div class="atd_direita">
+            <label class="nome" for="Inome">
+                <h3>Nome Completo</h3>
+                <input type="text" name="" placeholder="Digite seu nome" id="Inome">
+                <img src="src/NomeForm.svg" alt="">
+            </label>
+                <label class="telefone" for="Ifone">
+                    <h3>Telefone</h3>
+                    <input type="tel" name="" placeholder="Digite seu telefone" id="Ifone">
+                    <img src="src/FoneForm.svg" alt="">
+                </label>
+
+                <label for="Ibtn">
+                    <input type="button" value="Vamos Conversar" id="Ibtn">
+                </label>
+                
+        </div>
+    </section>
+
+
+    <footer>
+        <h2>
+            © 2023 todos os direitos reservados
+        </h2>
+    </footer>
 
 </body>
 
