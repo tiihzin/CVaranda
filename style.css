@@ -52,7 +52,7 @@ section{
 }
 
 body{
-    background-color: rgb(255, 255, 255);
+    background-color: white;
 }
 
 
@@ -85,6 +85,7 @@ header a{
     flex-direction: row;
 }
 
+
 /*HOME*/
 .home{
     background-image: url(src/Background1.png);
@@ -106,26 +107,24 @@ header a{
     background: #ebebee;
     display: flex;
     align-items: center;
+    gap: 4rem;
     flex-direction: row;
-}
-
-.esquerda{
-    padding-right: 2rem;
 }
 
 /*especialização*/
 .especializacao{
     display: flex;
     align-items: center;
-    
     flex-direction: column;
 }
 
 .container{
-    display: grid;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     gap: 4rem;
     margin-top: 4rem;
-    grid-template-columns: 1fr 1fr 1fr;
+
 }
 
 .colunas{
@@ -141,7 +140,6 @@ header a{
     display: flex;
     align-items: center;
     flex-direction: column;
-    padding: 3rem 10rem;
 }
 
 .depoimentos h2{
@@ -183,7 +181,7 @@ a:hover{
 }
 
 .atd_esquerda{
-    width: 30rem;
+   max-width: 30rem;
 }
 .atd_direita{
     display: flex;
@@ -192,21 +190,21 @@ a:hover{
 }
 
 #atendimento h2{
-    margin-top: 15px;
+    margin-top: 1rem;
 }
 .celular{
-    margin-top: 60px;
+    margin-top: 4rem;
     display: flex;
     flex-direction: row;
     align-items: start
 }
 .celular img{
-    padding-right: 10px;
+    padding-right: .7rem;
 }
 input[type="tel"],input[type="text"]{
     background: transparent;
     border: #353333 solid 2px;
-    padding: 15px 20px 15px 40px;
+    padding: 1rem 1.7rem 1rem 2rem;
     font-weight: 600;
     color: #353333;
 }
@@ -238,4 +236,28 @@ footer {
 
 footer h2{
     font-size: 0.8rem;
+}
+
+
+@media only screen and (max-width: 600px){
+    header{
+        display: none;
+    }
+
+    .sobremim{
+    flex-direction: column;
+    }
+
+    .sobremim img {
+        width: 80vw;
+    }
+
+    .container{
+        flex-direction: column;
+    }
+
+    #atendimento{
+        flex-direction: column;
+    }
+
 }
