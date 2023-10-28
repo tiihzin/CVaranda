@@ -48,7 +48,7 @@ p{
 }
 
 section{
-    padding: 60px;
+    padding: 3rem;
 }
 
 body{
@@ -62,7 +62,7 @@ header{
     z-index: 1;
     display: flex;
     width: 100vw;
-    padding: 20px 60px;
+    padding: 1.5rem 3rem;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
@@ -72,7 +72,7 @@ header{
 
 
 header a{
-    margin-right: 10px;
+    margin-right: .7rem;
     color: #353333;
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
@@ -89,11 +89,16 @@ header a{
 .home{
     background-image: url(src/Background1.png);
     height: 100vh;
-    padding: 0px;
+    padding: 0;
     display: flex;
+    background-size:auto;
     align-items: center;
     justify-content: center;
     
+}
+
+.home .logogrande{
+    width: 50vw;
 }
 
 /*sobre mim*/
@@ -105,26 +110,28 @@ header a{
 }
 
 .esquerda{
-    padding-right: 40px;
+    padding-right: 2rem;
 }
 
 /*especialização*/
 .especializacao{
     display: flex;
     align-items: center;
+    
     flex-direction: column;
 }
 
 .container{
-display: flex;
-flex-direction: row;
+    display: grid;
+    gap: 4rem;
+    margin-top: 4rem;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 
 .colunas{
     display: flex;
     flex-direction: column;
-    width: 358px;
-    padding: 60px 20px 0px 20px;
+    width: 22rem;
 }
 
 /*depoimentos*/
@@ -134,11 +141,11 @@ flex-direction: row;
     display: flex;
     align-items: center;
     flex-direction: column;
-    padding: 60px 150px;
+    padding: 3rem 10rem;
 }
 
 .depoimentos h2{
-    padding-top: 20PX;
+    padding-top: 1.5rem;
 }
 
 /*conversar*/
@@ -152,9 +159,9 @@ flex-direction: row;
 }
 
 a{
-    border: #fff 2px solid;
-    padding: 10px 15px ;
-    margin-top: 20px;
+    border: #fff .1rem solid;
+    padding: .7rem 1rem;
+    margin-top: 1.5rem;
     font-weight: 600;
     color: #fff;
     
@@ -176,7 +183,7 @@ a:hover{
 }
 
 .atd_esquerda{
-    width: 400px;
+    width: 30rem;
 }
 .atd_direita{
     display: flex;
